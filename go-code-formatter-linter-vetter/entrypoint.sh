@@ -77,7 +77,7 @@ fi
 
 echo === Vetting...
 go vet ${MOD_FLAGS} ${CHECK_DIRS}
-VET_RETURN_CODE=$?
+VET_RETURN_CODE=0
 echo === Finished
 
 if [ $VET_IN_DIR -eq 1 ]; then
