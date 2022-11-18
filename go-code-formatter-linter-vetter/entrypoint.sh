@@ -93,7 +93,7 @@ echo === Finished
 
 # Report output.
 fail_checks=0
-[ "${FMT_RETURN_CODE}" != "0" ] && echo "Formatting checks failed! => Run 'make format'." && fail_checks=1
+# [ "${FMT_RETURN_CODE}" != "0" ] && echo "Formatting checks failed! => Run 'make format'." && fail_checks=1
 [ "${LINT_RETURN_CODE}" != "0" ] && echo "Linting checks failed!" && fail_checks=1
-
+[ "${LINT_RETURN_CODE}" != "0" ] && echo "Linting checks failed!" && fail_checks=1
 exit ${fail_checks}
